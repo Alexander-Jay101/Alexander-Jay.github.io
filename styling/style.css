@@ -68,11 +68,11 @@ p{
     overflow: auto;
     border-color: black;
     border-width: 2px;
-    background-image: url(/images/background.jpg);
-    background-color: rgba(0, 0, 0, 0.432);
+    background-image: url(./background.jpg);
+    background-color: rgba(0, 0, 0, 0.7);
     background-blend-mode: overlay;
     background-repeat: no-repeat;
-    background-size: auto 100%;
+    background-size: 100%;
     border-radius: 6px;
 }
 
@@ -138,6 +138,30 @@ p{
     transform: skew(30deg);
 }
 
+.cutout-right{
+    left: 50%;
+    transform: skew(-30deg);
+}
+
+.contentImages{
+    position: absolute;
+    width:  150%;
+    height: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.contentImages-left{
+    transform: skew(-30deg);
+}
+
+.contentImages-right{
+    transform: skew(30deg);
+}
+
+
+/* References */
 .cutout-ref{
     position: relative;
     user-select: none;
@@ -189,27 +213,7 @@ p{
     transform: skew(30deg);
 }
 
-.cutout-right{
-    left: 50%;
-    transform: skew(-30deg);
-}
-
-.contentImages{
-    position: absolute;
-    width:  150%;
-    height: 100%;
-    border-radius: 8px;
-    overflow: hidden;
-    object-fit: cover;
-}
-
-.contentImages-left{
-    transform: skew(-30deg);
-}
-
-.contentImages-right{
-    transform: skew(30deg);
-}
+/* End of References */
 
 .white-bg{
     background: white;
