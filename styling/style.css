@@ -25,6 +25,7 @@ h1,h2,h3,h4,h5,h6,p,span{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-left: 10px;
 }
 
 #menu{
@@ -68,16 +69,12 @@ p{
     overflow: auto;
     border-color: black;
     border-width: 2px;
-    background-image: url(./background.jpg);
     background-color: rgba(0, 0, 0, 0.7);
     background-blend-mode: overlay;
-    background-repeat: no-repeat;
-    background-size: 100%;
     border-radius: 6px;
 }
 
 .page-reference{
-    background-image: none;
     background-color: #fff;
 }
 
@@ -114,12 +111,12 @@ p{
     top: 10%;
     position: absolute;
     transition: 0.5s;
-    padding: 20px;
+    padding: 10px;
     box-sizing: border-box;
     overflow: hidden;
 }
 
-
+/* Cut outs */
 .cutout{
     position: relative;
     user-select: none;
@@ -131,6 +128,8 @@ p{
     left: 0;
     z-index: 0;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
 }
 
 .cutout-left{
@@ -144,11 +143,8 @@ p{
 }
 
 .contentImages{
-    position: absolute;
-    width:  150%;
     height: 100%;
     border-radius: 8px;
-    overflow: hidden;
     object-fit: cover;
 }
 
@@ -160,7 +156,7 @@ p{
     transform: skew(30deg);
 }
 
-
+/* end of cutouts */
 /* References */
 .cutout-ref{
     position: relative;
