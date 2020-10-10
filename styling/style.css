@@ -1,0 +1,304 @@
+body{
+    margin: 0;
+    overflow: hidden;
+    background: #050505;
+}
+
+header{
+    width: 100vw;
+    height: 100vh;
+}
+
+h1,h2,h3,h4,h5,h6,p,span{
+    margin: 0;
+    line-height: 1;
+    font-family: 'Teko', sans-serif;
+}
+
+#header h3{
+    font-size: 30px;
+    line-height: 1;
+}
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#menu{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100px;
+    z-index: 99;
+}
+
+#menu #list-items span{
+    display: block;
+    text-align: right;
+    font-weight: 200;
+    font-size: 24px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+#menu #list-items span:hover{
+    font-weight: 400;
+}
+
+#menu #list-items span.heavy{
+    font-weight: 400 !important;
+    cursor: default;
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.page{
+    transition: 0.4s;
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    width: calc(100% - 140px);
+    height: calc(100vh - 40px);
+    overflow: auto;
+    border-color: black;
+    border-width: 2px;
+    background-image: url(/images/background.jpg);
+    background-color: rgba(0, 0, 0, 0.432);
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    border-radius: 6px;
+}
+
+.page-reference{
+    background-image: none;
+    background-color: #fff;
+}
+
+::-webkit-scrollbar{
+    display:none;
+}
+
+.pageText{
+    z-index: 99;
+}
+
+.arrow{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    user-select: none;
+}
+.arrow-top{
+    position: absolute;
+    left: 50%;
+    transform: translateY(-100%)
+}
+.arrow-bottom{
+    position: absolute;
+    left: 50%;
+    transform: translateY(30%)
+}
+
+.page-content{
+    width: 100%;
+    height: 100vh;
+    opacity: 0;
+    top: 10%;
+    position: absolute;
+    transition: 0.5s;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+
+.cutout{
+    position: relative;
+    user-select: none;
+    height: 100vh;
+    width: 25%;
+    min-width: 200px;
+    background-color: #aaa;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.cutout-left{
+    right: 50%;
+    transform: skew(30deg);
+}
+
+.cutout-ref{
+    position: relative;
+    user-select: none;
+    height: 25%;
+    width: 90vw;
+    min-width: 200px;
+    /* background-color: rgb(207, 14, 111); */
+    background-color: #ccc;
+    /* color: white; */
+    top: 0;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.ref-headshot{
+    position: absolute;
+    border-radius: 50%;
+    height: 75px;
+    width: auto;
+    right: 2%;
+    margin-bottom: 2%
+}
+
+.cutout-box{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.cutout-bar-right .cutout-box{
+    transform: skew(30deg);
+    margin-left: 2%;
+    margin-right: 15%;
+}
+
+.cutout-bar-left .cutout-box{
+    transform: skew(-30deg);
+    margin-left: 20%;
+    margin-right: 10%;
+}
+
+
+
+.cutout-bar-right{
+    transform: skew(-30deg);
+}
+
+.cutout-bar-left{
+    right: 50%;
+    transform: skew(30deg);
+}
+
+.cutout-right{
+    left: 50%;
+    transform: skew(-30deg);
+}
+
+.contentImages{
+    position: absolute;
+    width:  150%;
+    height: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.contentImages-left{
+    transform: skew(-30deg);
+}
+
+.contentImages-right{
+    transform: skew(30deg);
+}
+
+.white-bg{
+    background: white;
+}
+
+.header-text{
+    position: relative;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.5s;
+}
+
+.header-text h1, .header-text h2{
+    color: white;
+    font-size: 8.8vmax;
+    text-align: center;
+    font-weight: 200;
+    user-select: none;
+    transition: 0.5s;
+    line-height: 0.7;
+}
+
+.header-text h2{
+    font-size: 4vmax;
+    color: white;
+}
+
+.content{
+    margin: 60px;
+    height: calc(100vh - 120px);
+    border: 1px solid white;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.particle canvas{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.content:hover{
+    margin: 65px;
+    height: calc(100vh - 130px);
+    background: rgba(0,0,0,0.8)
+}
+
+.content:hover .header-text{
+    transform: translate(-50%, -50%) scale(0.95);
+}
+
+#page-header h1{
+    font-size: 80px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.ref-section{
+    padding: 5vw;
+    width: 50%;
+    margin-left: 5%;
+}
+.ref-section-right{
+    text-align: right;
+}
+.ref-section:nth-last-child(1){
+    padding-bottom: 10vw;
+    padding-top: 5vw;
+}
+
+@media(max-width: 600px){
+    #menu{
+        display: none;
+    }
+    .page{
+        width: 100%;
+        left: none;
+        display: block;
+        position: static;
+        opacity: 1 !important;
+        top: auto !important;
+    }
+    .page-content{
+        display: block;
+        height: auto;
+        overflow: default;
+    }
+}
