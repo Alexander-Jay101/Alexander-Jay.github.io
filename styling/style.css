@@ -74,7 +74,7 @@ p{
     border-radius: 6px;
 }
 
-.page-reference{
+.page-contact{
     background-color: #fff;
 }
 
@@ -158,27 +158,18 @@ p{
 
 /* end of cutouts */
 /* References */
-.cutout-ref{
+.cutout-contact{
     position: relative;
     user-select: none;
     height: 25%;
     width: 90vw;
     min-width: 200px;
     /* background-color: rgb(207, 14, 111); */
-    background-color: #ccc;
+    background-color: #bbb;
     /* color: white; */
     top: 0;
     z-index: 0;
     overflow: hidden;
-}
-
-.ref-headshot{
-    position: absolute;
-    border-radius: 50%;
-    height: 75px;
-    width: auto;
-    right: 2%;
-    margin-bottom: 2%
 }
 
 .cutout-box{
@@ -197,8 +188,6 @@ p{
     margin-left: 20%;
     margin-right: 10%;
 }
-
-
 
 .cutout-bar-right{
     transform: skew(-30deg);
@@ -272,15 +261,15 @@ p{
     margin-top: 50px;
 }
 
-.ref-section{
+.contact-section{
     padding: 5vw;
     width: 50%;
     margin-left: 5%;
 }
-.ref-section-right{
+.contact-section-right{
     text-align: right;
 }
-.ref-section:nth-last-child(1){
+.contact-section:nth-last-child(1){
     padding-bottom: 10vw;
     padding-top: 5vw;
 }
