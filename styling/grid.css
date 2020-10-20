@@ -1,0 +1,6 @@
+nav{
+    grid-column: 1/5;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    
+}

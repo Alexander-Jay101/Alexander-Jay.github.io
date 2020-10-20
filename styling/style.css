@@ -28,14 +28,21 @@ h1,h2,h3,h4,h5,h6,p,span{
     margin-left: 10px;
 }
 
+nav{
+    margin-left: 10%;
+    margin-right: 40%;
+    height: 100px;
+    background-color: #946eff;
+}
 
-p{
-    font-family: 'Montserrat', sans-serif;
+nav a{
+    margin: auto;
+
 }
 
 
-.page-content{
-    
+p{
+    font-family: 'Montserrat', sans-serif;
 }
 
 .header-text{
