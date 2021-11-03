@@ -1,0 +1,105 @@
+.content{
+  padding: 0px;
+  background-color: #fff;
+  word-wrap: break-word;
+}
+
+.contactImageBox{
+  max-height: 300px;
+  background-size: 4px 4px;
+  overflow: hidden;
+}
+.contactImageBox img{
+  max-width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.primaryContainer{
+  padding: 0px 0px 3.2em 0px;
+}
+
+.contactHeader{
+  width: calc(80% - 1.9em);
+  background-color: #fff;
+  margin: 0 0 0 175px;
+  transform: translateY(-100%) translateY(.4em);
+  padding: 1.3em 0px 0 1.9em;
+  position: absolute;
+  z-index: 1;
+}
+
+.contactTitle{
+  font-family: "Montserrat",sans-serif;
+  line-height: 1.2;
+  margin-bottom: .4em;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  color: #4b766b;
+}
+
+.contactContent{
+  margin: 0 0 1.6em;
+  margin-left: 200px;
+  width: calc(90% - 200px);
+  text-align: center;
+}
+.contactContent p{
+  text-align: justify;
+  font-size: 18px;
+}
+.contactContent a{
+  text-decoration: underline;
+  color: #477474;
+}
+.map{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.map iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+.followContainer{
+  margin-left: 55px;
+}
+
+@media only screen and (max-width: 1500px){
+  .contactContent{
+    width: calc(90% - 100px);
+    margin-left: 100px;
+  }
+  .contactHeader{
+    width: calc(90%-100px);
+    margin-left: 100px;
+  }
+  .followContainer{
+    margin-left: 20px;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .contactContent{
+    width:  90%;   
+    margin: auto;
+  }
+
+  .followContainer{
+    margin-left: 5px;
+  }
+
+  .contactHeader{
+    width: 100%;
+    margin: auto;
+    padding-bottom: 0.4em;
+    position: relative;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+	<meta charset="UTF-8">
+	<!-- Device scale -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Title -->
+	<title>Nutritiously you &#8211; Nutritional solutions tailored to you and your life</title>
+	<!-- Google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+
+	<!-- Icons -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.11/css/all.css" integrity="sha384-p2jx59pefphTFIpeqCcISO9MdVfIm4pNnsL08A6v5vaQc4owkQqxMV8kg4Yvhaw/" crossorigin="anonymous">
+	<!-- Main style sheet -->
+	<link rel="stylesheet" href="style/style.css">
+	<link rel="stylesheet" href="style/blog.css">
+	
+	<script type="text/javascript">
+		// Social media alert
+		function social(){
+			alert("Sorry, this page either doesn't exist yet or I haven't added in the link.")
+		}
+	</script>
+</head>
+<body>
+<div class="headerBox">
+	<div class="siteLogo"><img src="images\logo.png" height="150px"></div>
+	<div class="siteTitle">
+		<a href="https://alexander-jay101.github.io" rel="home" > Nutritiously you</a>
+	</div>
+	<div class="siteDescription">
+		<p> - Nutritional solutions tailored to you and your life - </p>
+		<a href="https://alexander-jay101.github.io/contact.html" style="font-size: 18px; color: #f00;">Book Now</a>
+	</div>
+	<div class="socialMenu">
+		<i class="fab fa-instagram fa-2x" onclick="social()" alt="Instagram" title="Instagram"></i> 
+		<i class="fab fa-facebook-square fa-2x" onclick="social()" alt="Facebook" title="Facebook"></i>
+	</div>
+</div>
+<div class="mainNav">
+	<ul id="Mobile">
+		<li>
+			<p onclick="menu()">Menu &#9776;</p>
+			<ul class="mobDrop" id="mobDrop" style="display: none; width: 70%">
+				<hr/>
+				<li>
+					<a href="https://alexanderjay-101.github.io/your-appointment/">Nutritiously you</a>
+				</li>
+				<hr />
+				<li>
+					<a href="https://alexanderjay-101.github.io/where-nutritional-therapy-can-help/">Blog</a>
+				</li>
+				<hr />
+				<li>
+					<a href="https://alexanderjay-101.github.io/about-nutritional-therapy/">About us</a>
+				</li>
+				<hr />
+				<li>
+					<a href="https://alexanderjay-101.github.io/about-nutritional-therapy/">Our services</a>
+				</li>
+				<hr />
+				<li style="padding-bottom: 1em;">
+					<a href="https://alexanderjay-101.github.io/about-nutritional-therapy/">Contact us</a>
+				</li>
+
+			</ul>
+		</li>
+	</ul>
+	<ul id="Desktop">
+		<li>
+			<a title="Nutritiously you | Home" href="https://alexander-jay101.github.io" style="opacity: 0.6">Nutritiously You</a>
+		</li>
+		<li>|</li>
+		<li>
+			<a title="Nutritiously you | Blog" href="https://alexander-jay101.github.io/blog.html">Blog</a>
+		</li>
+		<li>|</li>
+		<li>
+			<a title="About | Nutritiously you" onclick="social()">About us</a>
+			<!-- <ul class="subMenu">
+				<li>
+					<a href="https://alexanderjay-101.github.io/your-appointment/">Your appointment</a>
+				</li>
+				<li>
+					<a href="https://alexanderjay-101.github.io/where-nutritional-therapy-can-help/">Where nutritional therapy can help</a>
+				</li>
+				<li>
+					<a href="https://alexanderjay-101.github.io/about-nutritional-therapy/">About nutritional therapy</a>
+				</li>
+			</ul> -->
+		</li>
+		<li>|</li>
+		<li>
+			<a title="Nutritiously you | Services" href="https://alexander-jay101.github.io/services.html">Our Services</a>
+		</li>
+		<li>|</li>
+		<li>
+			<a title="Nutritiously you | Contact" href="https://alexander-jay101.github.io/contact.html">Contact us</a>
+		</li>
+	</ul>
+</div>
+<div class="content">
+	<div class="primaryContainer">
+		<div class="blogImageBox">
+			<img src="images/soup.jpg" />
+		</div>
+		<header class="postHeader">
+			<h1 class="postTitle">Carrot, Turmeric and Ginger Soup</h1>
+		</header>
+		<div class="postContent">
+			<p>
+				Welcome to Nutritiously You providing individual nutritional therapy tailored to you and your life.
+			</p>
+			<p>
+				At Nutritiously You we believe passionately that the food you eat and the way you live can have dramatic effects on your health. Food affects every cell in your body and can be the difference between feeling ‘OK’ and feeling ‘amazing’. 
+			</p>
+			<p>
+				<a onclick="social()">Read more</a>
+			</p>
+		</div>
+	</div>
+	<div class="primaryContainer">
+		<div class="blogImageBox">
+			<img src="images/detox.jpg" />
+		</div>
+		<header class="postHeader">
+			<h1 class="postTitle">Detox your life</h1>
+		</header>
+		<div class="postContent">
+			<p>
+				Welcome to Nutritiously You providing individual nutritional therapy tailored to you and your life.
+			</p>
+			<p>
+				At Nutritiously You we believe passionately that the food you eat and the way you live can have dramatic effects on your health. Food affects every cell in your body and can be the difference between feeling ‘OK’ and feeling ‘amazing’. 
+			</p>
+			<p>
+				<a onclick="social()">Read more</a>
+			</p>
+		</div>
+		<hr />
+	</div>
+	<div class="followContainer">
+		<header class="followHeader">
+			<h1 class="followTitle"> - Follow Blog via Email - </h1>
+		</header>
+		<form id="subscribe" method="get">
+			<p>Enter your name and email address to follow this blog and recieve notifications of new posts by email</p>
+			<p>
+				Name:
+				<br />
+				<input type="text" name="name">
+			</p>
+			<p>
+				Email:
+				<br />
+				<input type="text" name="email">
+			</p>
+			<p>
+				<input value="Follow" type="submit" onclick="social()">
+			</p>
+		</form>
+	</div>
+	<footer>
+		<div class="socialMenu">
+			<i class="fab fa-instagram fa-2x" onclick="social()" alt="Instagram" title="Instagram"></i> 
+			<i class="fab fa-facebook-square fa-2x" onclick="social()" alt="Facebook" title="Facebook"></i>
+		</div>
+		<p>View policy here:</p>
+		<p>Designed and built by Alexander Jay &copy; 2018</p>
+	</footer>
+</div>
+</body>
+</html>

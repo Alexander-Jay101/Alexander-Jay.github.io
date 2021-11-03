@@ -1,12 +1,159 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Squirrels Pre School</title>
+	<meta charset="UTF-8">
+	<!-- Device scale -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Title -->
+	<title>Squirrels Preschool</title>
+	<meta name="description" content="We are a thriving preschool located within the St Johns and Highwoods Community Centre. Our Mission is to offer all children equal opportunity to learn through play in a safe, stimulating and nurturing environment - inspiring awe and wonder and helping to prepare children for their next steps in learning"/>
+	<meta name="keywords" content="Preschool,Colchester,Kids,School, Pre-School, Ofsted, Essex, Child"/>
+	<!-- Google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+
+	<!-- Icons -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.11/css/all.css" integrity="sha384-p2jx59pefphTFIpeqCcISO9MdVfIm4pNnsL08A6v5vaQc4owkQqxMV8kg4Yvhaw/" crossorigin="anonymous">
+	<!-- Main style sheet -->
+	<link rel="stylesheet" href="style/style.css">
+	
+	<script type="text/javascript">
+		// Social media alert
+		function social(){
+			alert("Sorry, this page either doesn't exist yet, this webpage is under development")
+		}
+		function menu(){
+			// alert("I haven't added in the drop-down menu yet")
+			var x = document.getElementById("mobDrop");
+		    if (x.style.display === "none") {
+		        x.style.display = "inline-block";
+		    } else {
+		        x.style.display = "none";
+		    }
+		}
+	</script>
 </head>
 <body>
-   <H1>This website is undergoing maintainance, please contact: office@squirrelspreschool.com</H1>
+<div class="headerBox">
+	<div class="siteLogo"><img src="images\little-squirrels.jpeg" height="150px"></div>
+	<div class="siteTitle">
+		<a href="https://squirrelspreschool.com" rel="home" >Squirrels Preschool</a>
+	</div>
+	<div class="siteDescription">
+		<p>Highwoods, Colchester</p>
+		<a href="https://squirrelspreschool.com/contact.html" style="font-size: 18px; color: #f00;">Contact us!</a>
+	</div>
+	<div class="socialMenu">
+		<i class="fab fa-instagram fa-2x" onclick="social()" alt="Instagram" title="Instagram"></i> 
+		<i class="fab fa-facebook-square fa-2x" onclick="social()" alt="Facebook" title="Facebook"></i>
+	</div>
+</div>
+<!-- <div class="mainNav">
+	<ul id="Mobile">
+		<li>
+			<p onclick="menu()">Menu &#9776;</p>
+			<ul class="mobDrop" id="mobDrop" style="display: none; width: 70%">
+				<hr/>
+				<li>
+					<a href="https://squirrelspreschool.com">Squirrels</a>
+				</li>
+				<hr />
+				<li>
+					<a href="https://squirrelspreschool.com/blog.html">Blog</a>
+				</li>
+				<hr />
+				<li>
+					<a href="https://squirrelspreschool.com/gallery.html">Gallery</a>
+				</li>
+				<hr />
+				<li>
+					<a href="https://squirrelspreschool.com/ofsted.html">Ofsted Report</a>
+				</li>
+				<hr />
+				<li style="padding-bottom: 1em;">
+					<a href="https://squirrelspreschool.com/contact.html">Contact us</a>
+				</li>
+
+			</ul>
+		</li>
+	</ul>
+	<ul id="Desktop">
+		<li>
+			<a title="Squirrels Preschool | Home" href="https://squirrelspreschool.com" style="opacity: 0.6">Squirrels Preschool</a>
+		</li>
+		<li>|</li>
+		<li>
+			<a title="Squirrels Preschool | Blog" href="https://squirrelspreschool.com/blog.html">Blog</a>
+		</li>
+		<li>|</li>
+		<li>
+			<a title="Squirrels Preschool | Gallery" onclick="social()">Gallery</a>
+		</li>
+		<li>|</li>
+		<li>
+			<a title="Squirrels Preschool | Ofsted Report" href="https://squirrelspreschool.com/services.html">Ofsted Report</a>
+		</li>
+		<li>|</li>
+		<li>
+			<a title="Squirrels Preschool | Contact us" href="https://squirrelspreschool.com/contact.html">Contact us</a>
+		</li>
+	</ul>
+</div> -->
+<div class="headerImage">
+	<div class="headerImageBox">
+		<img src="images/background.jpg" />
+	</div>
+</div>
+<div class="content">
+	<div class="primaryContainer">
+		<header class="entryHeader">
+			<h1 class="entryTitle">Welcome to Squirrels Preschool</h1>
+		</header>
+		<div class="entryContent">
+			<p>
+				We are a thriving preschool located within the St Johns and Highwoods Community Centre.
+			</p>
+			<p>
+				Our Mission is:<br>To offer all children equal opportunity to learn through play in a safe, stimulating and nurturing environment - inspiring awe and wonder and helping to prepare children for their next steps in learning
+			</p>
+			<p>
+				We welcome all children from the age of 2 - 4<br>We offer two year old funding (where eligible)<br>15 hour 3/4 year old funding (available for all)<br>Extended 30 hour 3/4 year old funding (where eligible)			</p>
+			<p>
+				We are open Monday-Friday during term time
+			</p>
+			<p>
+				Full Day session: 9.15am - 3.15pm<br>Morning session: 9.15am - 12.15pm<br>Afternoon session: 12.45pm - 3.15am
+			</p>
+		</div>
+		<hr />
+	</div>
+	<div class="followContainer">
+		<header class="followHeader">
+			<h1 class="followTitle"> - Follow Blog via Email - </h1>
+		</header>
+		<form id="subscribe" method="get">
+			<p>Enter your name and email address to follow this blog and recieve notifications of new posts by email</p>
+			<p>
+				Name:
+				<br />
+				<input type="text" name="name">
+			</p>
+			<p>
+				Email:
+				<br />
+				<input type="text" name="email">
+			</p>
+			<p>
+				<input value="Follow" type="submit" onclick="social()">
+			</p>
+		</form>
+	</div>
+	<footer>
+		<div class="socialMenu">
+			<i class="fab fa-instagram fa-2x" onclick="social()" alt="Instagram" title="Instagram"></i> 
+			<i class="fab fa-facebook-square fa-2x" onclick="social()" alt="Facebook" title="Facebook"></i>
+		</div>
+		<p style="padding-bottom: 15px">Designed and built by Alexander Jay &copy; 2021</p>
+	</footer>
+</div>
 </body>
 </html>
